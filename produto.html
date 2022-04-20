@@ -1,0 +1,734 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width">
+    <link rel="stylesheet" href="bootstrap/css/bootstrap.css" />
+    <link rel="stylesheet" href="font-awesome-4.7.0/css/font-awesome.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="css/style.css" />
+    <link rel="stylesheet" href="css/produto.css" />
+    <link rel="stylesheet" href="css/media.css" />
+
+
+    <script type="text/javascript" src="bootstrap/js/bootstrap.js"></script>
+    <script type="text/javascript" src="bootstrap/js/bootstrap.bundle.js"></script>
+
+    <script src="js/listaprod.js"></script>
+    <title>Lumiery</title>
+</head>
+<body id="body">
+    <div class="navbar nav-top d-flex justify-content-center">
+
+            <div class="navbar-brand d-flex col-4 align-items-center">
+                <img class="logo" src="./imgs/logo.png" alt="padrao" title="padrao" />
+                <h2 class="marcatopo">Lumiery</h2>
+            </div>
+
+
+            <div class="d-flex col-4 justify-content-end align-items-center">
+              <a href="carrinho.html" class="carrinho nav-link fa fa-shopping-cart text-light links-direita position-relative">
+                <span class="badge rounded-pill badge-danger position-absolute top-40 start-90 translate-middle ">0</span>
+              </a>
+                <div class="signin">
+                  <button class="bt-signin nav-link" id="signin">
+                    <i class="fa fa-sign-in fa-2x" aria-hidden="true"></i>
+                  </button>
+                </div>
+                <a href="login.html" class="login hide nav-link text-light links-direita" id="login">LOGIN</a>
+                <i class="loged fa fa-user-circle"></i>
+                <a href="#" class="sair">Sair</a>
+                <a href="cadastro.html" class="cadastro hide nav-link text-light links-direita" id="cadastro">CADASTRO</a>
+            </div>
+
+    </div>
+    
+    <div class="navbar navbar-light nav-cat d-flex">
+      <div class="cat-col container-fluid  justify-content-center ">
+        
+      
+        
+        <div class="categoria col-4 col-sm-5 col-xs-2" id="categorias">
+            <div class="dropdown">
+
+                <div class="dropbtn justify-content-center">
+                  <button class="botao-categoria" id="botao-categoria">
+                    <i class="fa fa-chevron-down"><span>Categorias</span></i>
+                  </button>
+                </div>
+                <div class="dropdown-main" id="dropdown-main">
+                  <div id="linksub" class="dropdown-items">
+                    <button class="botao-ferramentas" id="bt-ferramentas">
+                      Ferramentas  
+                      <i class="fa fa-chevron-right"></i>
+                    </button>
+                    
+                    <div class="dropdown-um" id="dropdown-um">
+
+                      <button class="dropdown-item" id="brocas">Brocas</button>
+                      <button class="dropdown-item" id="furadeiras">Furadeiras</button>
+                      <button class="dropdown-item" id="martelos">Martelos</button>
+                      <button class="dropdown-item" id="serras">Serras</button>
+
+                    </div>
+                  </div>
+                   <div id="linksub" class="dropdown-items"> 
+                    <button class="botao-hardware" id="bt-hardware">
+                    Hardware
+                    <i class="fa fa-chevron-right"></i>
+                    </button>
+                    <div class="dropdown-dois" id="dropdown-dois">
+
+                        <button class="dropdown-item" id="fonte">Fonte</button>
+                        <button class="dropdown-item" id="memoria">Memória Ram</button>
+                        <button class="dropdown-item" id="placamae">Placa Mãe</button>
+                        <button class="dropdown-item" id="processador">Processador</button>
+                        <button class="dropdown-item" id="ssd">SSD</button>
+  
+                      </div>
+                  </div>
+                  <div id="linksub" class="dropdown-items">
+                    <button class="botao-moveis" id="bt-moveis">
+                    Móveis
+                    <i class="fa fa-chevron-right"></i>
+                    </button>
+                    <div class="dropdown-tres" id="dropdown-tres">
+
+                        <button class="dropdown-item" id="banheiro">Banheiro</button>
+                        <button class="dropdown-item" id="cozinha">Cozinha</button>
+                        <button class="dropdown-item" id="quarto">Quarto</button>
+                        <button class="dropdown-item" id="sala">Sala</button>
+
+                      </div>
+                  </div>
+                  <div id="linksub" class="dropdown-items">
+                    <button class="botao-tv" id="bt-tvvideo">
+                    TV e Video
+                    <i class="fa fa-chevron-right"></i>
+                    </button>
+                    <div class="dropdown-quatro" id="dropdown-quatro">
+
+                        <button class="dropdown-item" id="tv">TVs</button>
+                        <button class="dropdown-item" id="acessoriotv">Acessórios TVs</button>
+                        <button class="dropdown-item" id="hometheather">Home Theather</button>
+                        <button class="dropdown-item" id="projetor">Projetor</button>
+
+                      </div>
+                  </div>
+                  <div id="linksub" class="dropdown-items">
+                    <button class="botao-smartphones" id="bt-smartphones">
+                    Smartphones
+                    <i class="fa fa-chevron-right"></i>
+                    </button>
+                    <div class="dropdown-cinco" id="dropdown-cinco">
+
+                        <button class="dropdown-item" id="asus">Asus</button>
+                        <button class="dropdown-item" id="lg">LG</button>
+                        <button class="dropdown-item" id="iphone">Iphone</button>
+                        <button class="dropdown-item" id="samsung">Samsung</button>
+  
+                      </div>
+                  </div>
+                </div>
+              </div>
+            
+        </div>
+
+        <div class="buscas text-light col-4 col-sm-7 col-xs-10">
+          <form action="#" method="POST">
+            <div class="d-flex align-items-center">
+              <input type="text" id="busca" name="busca" class="busca flex-fill form-control" placeholder="O que deseja buscar?">
+              <button class="botao-busca btn text-light"><i class="lupa fa fa-search"><label class="lbusca" for="busca">Buscar</label></i></button>
+              
+              
+            </div>
+          </form>
+        </div>
+      </div>
+
+    </div>
+
+
+    <div class="janela-produto">
+        <div class="imagens-produto">
+
+            <div class="imagem-expandida">
+                <img src="../ProjetoFinal/imgs/iphone/iphone1.webp" class="expandida" id="expandida" alt="Iphone">
+            </div>
+
+            <div class="miniaturas">
+                <div class="miniatura1 miniaturas">                
+                    <img src="../ProjetoFinal/imgs/iphone/iphone1.webp" alt="Iphone">
+                </div>
+                <div class="miniatura2 miniaturas">                
+                    <img src="../ProjetoFinal/imgs/iphone/iphone2.webp" alt="Iphone">
+                </div>
+                <div class="miniatura3 miniaturas">                
+                    <img src="../ProjetoFinal/imgs/iphone/iphone3.webp" alt="Iphone">
+                </div>
+                <div class="miniatura4 miniaturas">                
+                    <img src="../ProjetoFinal/imgs/iphone/iphone4.webp" alt="Iphone">
+                </div>
+    
+            </div>
+            
+        </div>
+        <div class="detalhes-produto">
+            <h1 class="titulo-produto">Iphone 12 Mini Vermelho</h1>
+            <span>Ref:</span>
+            <span id="codigo">0</span>
+            <p class="descricao-produto">Velocidade 5G. A14 Bionic, o chip mais rápido em um smartphone.
+                Tela OLED de ponta a ponta. Ceramic Shield quatro vezes mais resistente a quedas.
+                E modo Noite em todas as câmeras. O iPhone 12 vem com tudo — em dois tamanhos perfeitos.</p>
+            
+            <button class="comprar" id="comprar">Comprar</button>
+              
+            <h3 class="valor-produto">R$ 8.156,00</h3>
+            <h5>Em 12x sem juros no cartão de R$ 679,66</h5>
+
+            <button class="parcelas" type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#parcelaModal" id="parcelas">Ver Parcelas</button>
+            <div class="modal fade" id="parcelaModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                <div class="modal-dialog modal-dialog-centered">
+                  <div class="modal-content">
+                    <div class="modal-header">
+                      <h5 class="modal-title" id="exampleModalLabel">Parcelas</h5>
+                      <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                    </div>
+                    <div class="modal-body">
+                        <table class="tabela-parcelas table table-striped">
+                            <tbody>
+                                <tr> <td> 1x R$ 7.749,00 c/ desc</td> <td>2x R$ 4.078,00 sem juros</td></tr>
+                                <tr> <td>3x R$ 2.718,66 sem juros</td> <td>4x R$ 2.039,00 sem juros</td> </tr>
+                                <tr> <td>5x R$ 1.631,20 sem juros</td> <td>6x R$ 1.359,33 sem juros</td> </tr>
+                                <tr> <td>7x R$ 1.165,14 sem juros</td> <td>8x R$ 1.019,50 sem juros</td> </tr>
+                                <tr> <td>9x R$ 906,22 sem juros</td> <td>10x R$ 815,60 sem juros</td> </tr>
+                                <tr> <td>11x R$ 741,45 sem juros</td> <td>12x R$ 679,66 sem juros</td> </tr>
+                            </tbody>
+                            
+                        </table>
+
+                    </div>
+                    <div class="modal-footer">
+                      <button type="button" class="btn parcelas" data-bs-dismiss="modal">Fechar</button>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            <h3 class="valor-produto">R$ 7.749,00 à vista</h3>
+
+            <form action="" method="POST">
+                <input type="submit" name="calcular" id="calcular" value="Calcular Frete"></input>
+                <input type="text" name="cep" id="cep">
+                <p class="cep-invalido campo-invalido">CEP inválido</p>
+            </form>
+            <div class="modal fade" id="calcularModal" tabindex="-1" aria-labelledby="freteModalLabel" aria-hidden="true">
+              <div class="modal-dialog modal-dialog-centered">
+                <div class="modal-content">
+                  <div class="modal-header">
+                    <h5 class="modal-title" id="freteModalLabel">Frete</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                  </div>
+                  <div class="modal-body">
+                    <div class="form-check">
+                      <input class="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioDefault1">
+                      <label class="form-check-label" for="flexRadioDefault1">
+                        Entrega Normal R$ 23.99
+                      </label>
+                    </div>
+                    <div class="form-check">
+                      <input class="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioDefault2" checked>
+                      <label class="form-check-label" for="flexRadioDefault2">
+                        Entrega Expressa R$ 49.99
+                      </label>
+                    </div>
+                  </div>
+                  <div class="modal-footer">
+                    <button type="button" class="btn frete" data-bs-dismiss="modal">Confirmar</button>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+        </div>
+        
+    </div>
+    <div class="especificacoes">
+        <ul class="nav nav-tabs" id="myTab" role="tablist">
+            <li class="nav-item" role="presentation">
+              <button class="nav-link active" id="descricao-tab" data-bs-toggle="tab" data-bs-target="#descricao" type="button" role="tab" aria-controls="descricao" aria-selected="true">Descrição</button>
+            </li>
+            <li class="nav-item" role="presentation">
+              <button class="nav-link" id="especificacoes-tab" data-bs-toggle="tab" data-bs-target="#especificacoes" type="button" role="tab" aria-controls="especificacoes" aria-selected="false">Especificações</button>
+            </li>
+
+          </ul>
+          <div class="tab-content" id="myTabContent">
+            <div class="tab-pane fade show active" id="descricao" role="tabpanel" aria-labelledby="descricao-tab">
+                <p>A14 Bionic, o chip mais rápido em um smartphone. Tela OLED de ponta a ponta. Ceramic Shield quatro vezes mais resistente a quedas. 
+                    E modo Noite em todas as câmeras. O iPhone 12 mini vem com tudo. O A14 Bionic é o chip mais rápido em um smartphone. 
+                    E ultrapassa todos os limites. Seja processando trilhões de operações no Neural Engine ou filmando em Dolby Vision algo 
+                    que nem câmeras profissionais conseguem fazer. Ele também é muito eficiente, oferecendo maior duração de bateria, 
+                    além de estar pronto para o futuro. É potência de sobra para o que vier por aí. Muito mais contraste. 
+                    Precisão de cor sensacional. Um salto enorme em densidade de pixels5. Depois dessa tela, você não vai ter olhos para outra coisa. 
+                    Com tecnologia OLED, ela oferece brilhos mais intensos, pretos mais escuros e resoluções mais altas em tudo o que você vê. 
+                    É a melhor tela de iPhone que já fizemos e ela vai de ponta a ponta. Coloque a nova capa MagSafe, uma carteira ou as duas 
+                    (não se preocupe, a carteira tem uma proteção que não deixa os cartões desmagnetizarem). O iPhone 12 mini oferece velocidades de 
+                    4G LTE até 2 Gbps para você baixar arquivos grandes, subir fotos e fazer streaming de vídeos de alta qualidade.</p>
+            </div>
+            <div class="tab-pane fade" id="especificacoes" role="tabpanel" aria-labelledby="especificacoes-tab">
+                <p class="subtitulo">Características:</p>
+
+                <p>- Marca: Apple</p>
+
+                <p>- Modelo: iPhone 12 mini</p>
+               
+
+                <p class="subtitulo">Capacidade:</p>
+
+                <p>- 256 GB</p>
+
+                
+
+                <p class="subtitulo">Tamanho:</p>
+
+                <p>- Largura: 64,2 mm</p>
+
+                <p>- Altura: 131,5 mm</p>
+
+                <p>- Espessura: 7,4 mm</p>
+
+                
+
+                <p class="subtitulo">Tela:</p>
+
+                <p>- Super Retina XDR</p>
+
+                <p>- OLED sem bordas de 5,4 polegadas (na diagonal)</p>
+
+                <p>- Resolução de 2340 x 1080 pixels a 476 ppp</p>
+
+                <p>- HDR</p>
+
+                <p>- True Tone</p>
+
+                <p>- Ampla tonalidade de cores (P3)</p>
+
+                <p>- Resposta tátil</p>
+
+                <p>- Proporção de contraste: 2.000.000:1 (típica)</p>
+
+                <p>- Brilho máx. de 625 nits (típico); brilho máx. de 1200 nits (HDR)</p>
+
+                <p>- Revestimento resistente a impressões digitais e oleosidade</p>
+
+                <p>- Suporte à exibição simultânea de vários idiomas e caracteres</p>
+
+                
+
+                <p class="subtitulo">* A tela do iPhone 12 mini tem bordas arredondadas que se ajustam ao design curvo do telefone dentro da sua forma retangular. Quando medida como um retângulo, a tela tem 5,42 polegadas na diagonal. A área real de visualização é menor.</p>
+
+
+
+                <p>Resistência a respingos, água, e poeira:</p>
+
+                <p>- Classificados como IP68 (profundidade máxima de seis metros por até 30 minutos) segundo a norma IEC 60529</p>
+
+
+
+                <p class="subtitulo">Chip:</p>
+
+                <p>- A14 Bionic</p>
+
+                <p>- Nova geração do Neural Engine</p>
+
+
+
+                <p class="subtitulo">Câmera:</p>
+
+                <p>- Sistema de câmera dupla (ultra-angular e grande-angular) de 12 MP</p>
+
+                <p>- Ultra-angular: abertura ƒ/2.4 e campo de visão de 120°</p>
+
+                <p>- Grande-angular: abertura ƒ/1.6</p>
+
+                <p>- Zoom out óptico de 2x</p>
+
+                <p>- Zoom digital até 5x</p>
+
+                <p>- Modo Retrato com efeito bokeh avançado e Controle de Profundidade</p>
+
+                <p>- Iluminação de Retrato com seis efeitos (Luz Natural, Luz de Estúdio, Luz de Contorno, Luz de Palco, Luz de Palco Mono, Luz Brilhante Mono)</p>
+
+                <p>- Estabilização óptica de imagem (grande-angular)</p>
+
+                <p>- Lente de cinco elementos (ultra-angular); lente de sete elementos (grande-angular)</p>
+
+                <p>- Flash True Tone com mais brilho e sincronização lenta</p>
+
+                <p>- Panorama (até 63 MP)</p>
+
+                <p>- Lente coberta com cristal de safira</p>
+
+                <p>- Focus Pixels a 100% (grande-angular)</p>
+
+                <p>- Modo Noite (ultra-angular e grande-angular)</p>
+
+                <p>- Deep Fusion (ultra-angular e grande-angular)</p>
+
+                <p>- HDR Inteligente 3 com Detecção de Cena</p>
+
+                <p>- Captura de ampla tonalidade de cores para fotos e Live Photos</p>
+
+                <p>- Correção de lente (ultra-angular)</p>
+
+                <p>- Correção avançada de olhos vermelhos</p>
+
+                <p>- Estabilização automática de imagem</p>
+
+                <p>- Modo contínuo</p>
+
+                <p>- Fotos com localização geográfica</p>
+
+                <p>- Formatos de imagem capturados: HEIF e JPEG</p>
+
+                
+
+                <p class="subtitulo">Gravação de vídeo:</p>
+
+                <p>- Gravação de vídeo HDR com Dolby Vision até 30 qps</p>
+
+                <p>- Gravação de vídeo 4K a 24 qps, 30 qps ou 60 qps</p>
+
+                <p>- Gravação de vídeo HD de 1080p a 30 qps ou 60 qps</p>
+
+                <p>- Gravação de vídeo HD de 720p a 30 qps</p>
+
+                <p>- Estabilização óptica de imagem para vídeo (grande-angular)</p>
+
+                <p>- Zoom out óptico de 2x</p>
+
+                <p>- Zoom digital até 3x</p>
+
+                <p>- Zoom de áudio</p>
+
+                <p>- Flash True Tone com mais brilho</p>
+
+                <p>- QuickTake de vídeo</p>
+
+                <p>- Vídeo em câmera lenta de 1080p a 120 qps ou 240 qps</p>
+
+                <p>- Vídeo em time-lapse com estabilização</p>
+
+                <p>- Time-lapse com modo Noite</p>
+
+                <p>- Alcance dinâmico estendido para vídeo até 60 qps</p>
+
+                <p>- Estabilização cinemática de vídeo (4K, 1080p e 720p)</p>
+
+                <p>- Vídeo com foco automático contínuo</p>
+
+                <p>- Tira fotos em 8 MP enquanto grava vídeos 4K</p>
+
+                <p>- Zoom durante a reprodução</p>
+
+                <p>- Formatos de gravação de vídeo: HEVC e H.264</p>
+
+                <p>- Gravação em estéreo</p>
+
+                
+
+                <p class="subtitulo">Câmera TrueDepth:</p>
+
+                <p> - Câmera de 12 MP</p>
+
+                <p>- Abertura ƒ/2.2</p>
+
+                <p>- Modo Retrato com efeito bokeh avançado e Controle de Profundidade</p>
+
+                <p>- Iluminação de Retrato com seis efeitos (Luz Natural, Luz de Estúdio, Luz de Contorno, Luz de Palco, Luz de Palco Mono, Luz Brilhante Mono)</p>
+
+                <p>- Animoji e Memoji</p>
+
+                <p>- Modo Noite</p>
+
+                <p>- Deep Fusion</p>
+
+                <p>- HDR Inteligente 3 com Detecção de Cena</p>
+
+                <p>- Gravação de vídeo HDR com Dolby Vision até 30 qps</p>
+
+                <p>- Gravação de vídeo 4K a 24 qps, 30 qps ou 60 qps</p>
+
+                <p>- Gravação de vídeo HD de 1080p a 30 qps ou 60 qps</p>
+
+                <p>- Vídeo em câmera lenta de 1080p a 120 qps</p>
+
+                <p>- Vídeo em time-lapse com estabilização</p>
+
+                <p>- Time-lapse com modo Noite</p>
+
+                <p>- Alcance dinâmico estendido para vídeo até 30 qps</p>
+
+                <p>- Estabilização cinemática de vídeo (4K, 1080p e 720p)</p>
+
+                <p>- QuickTake de vídeo</p>
+
+                <p>- Captura de ampla tonalidade de cores para fotos e Live Photos</p>
+
+                <p>- Correção de lente</p>
+
+                <p>- Flash Retina</p>
+
+                <p>- Estabilização automática de imagem</p>
+
+                <p>- Modo contínuo</p>
+
+                
+
+                <p class="subtitulo">Face ID:</p>
+
+                <p>- Reconhecimento facial pela câmera TrueDepth</p>
+
+                
+
+                <p class="subtitulo">Apple Pay:</p>
+
+                <p>- Pague com seu iPhone usando o Face ID em lojas, apps e sites</p>
+
+                <p>- Complete suas compras com o Apple Pay iniciadas no Mac</p>
+
+                
+
+                <p class="subtitulo">Rede celular e Conexões sem fio:</p>
+
+                <p>- 5G (sub-6 GHz)</p>
+
+                <p>- Gigabit LTE com MIMO 4x4 e LAA</p>
+
+                <p>- Wi‑Fi 6 (802.11ax) com MIMO 2x2</p>
+
+                <p>- Bluetooth 5.0</p>
+
+                <p>- Chip de banda ultralarga para reconhecimento espacial5</p>
+
+                <p>- NFC com modo leitura</p>
+
+                <p>- Cartões expressos com reserva de bateria</p>
+
+                
+
+                <p class="subtitulo">Localização:</p>
+
+                <p>- GPS, GLONASS, Galileo, QZSS e BeiDou integrado</p>
+
+                <p>- Bússola digital</p>
+
+                <p>- Wi‑Fi</p>
+
+                <p>- Rede celular</p>
+
+                <p>- Microlocalização iBeacon</p>
+
+                
+
+                <p class="subtitulo">Chamada de vídeo:</p>
+
+                <p>- FaceTime de vídeo via dados celulares ou Wi‑Fi</p>
+
+                <p>- FaceTime HD (1080p) de vídeo via 5G ou Wi‑Fi</p>
+
+                
+
+                <p class="subtitulo">Chamada de áudio:</p>
+
+                <p>- FaceTime de áudio</p>
+
+                <p>- VoLTE (Voice over LTE) </p>
+
+                <p>- Chamadas Wi‑Fi </p>
+
+                
+
+                <p class="subtitulo">Reprodução de áudio:</p>
+
+                <p>- Formatos de áudio compatíveis: AAC-LC, HE-AAC, HE-AAC (v2), AAC Protegido, MP3, PCM Linear, Apple Lossless, FLAC, Dolby Digital (AC-3), Dolby Digital Plus (E-AC-3), Dolby Atmos e Audible (formatos 2, 3, 4, Audible Enhanced Audio, AAX e AAX+)</p>
+
+                <p>- Reprodução de áudio espacial</p>
+
+                <p>- Limite máximo de volume configurável pelo usuário</p>
+
+                
+
+                <p class="subtitulo">Reprodução de vídeo:</p>
+
+                <p>- Formatos de vídeo compatíveis: HEVC, H.264, MPEG-4 Part 2 e Motion JPEG, HDR com Dolby Vision, HDR10 e HLG</p>
+
+                <p>- AirPlay para espelhamento e reprodução de fotos e vídeos até 4K HDR na Apple TV (2ª geração ou posterior) ou Smart TV compatível com AirPlay 2</p>
+
+                <p>- Compatibilidade com espelhamento de vídeo e saída de vídeo de até 1080p via Adaptador de Lightning para AV Digital e Adaptador de Lightning para VGA (vendidos separadamente)</p>
+
+                
+
+                <p class="subtitulo">Siri:</p>
+
+                <p>- Use sua voz para enviar mensagens, definir lembretes e muito mais</p>
+
+                <p>- Receba sugestões inteligentes na sua tela Bloqueada ou no Mensagens, Mail, QuickType e muito mais</p>
+
+                <p>- Ative dizendo “E aí, Siri”</p>
+
+                <p>- Use sua voz para ativar atalhos com seus apps favoritos</p>
+
+                
+
+                <p class="subtitulo">Botões e conectores externos:</p>
+
+                <p>- Aumentar/ Diminuir volume</p>
+
+                <p>- Tocar/Silencioso</p>
+
+                <p>- Botão lateral</p>
+
+                <p>- Alto-falante estéreo integrado / Microfone Integrado</p>
+
+                <p>- Conector Lightning</p>
+
+                <p>- Alto-falante estéreo integrado</p>
+
+                <p>- Microfones integrados</p>
+
+                
+
+                <p class="subtitulo">Energia e bateria:</p>
+
+                <p>- Reprodução de vídeo: Até 15 horas</p>
+
+                <p>- Streaming de vídeo: Até 10 horas</p>
+
+                <p>- Reprodução de áudio: Até 50 horas</p>
+
+                <p>- Bateria interna recarregável de íon de lítio</p>
+
+                <p>- Recarga sem fio MagSafe até 15W</p>
+
+                <p>- Recarga sem fio padrão Qi até 7,5W</p>
+
+                <p>- Recarga via USB do computador ou adaptador de energia</p>
+
+                <p>- Compatível com recarga rápida: Recarga de até 50% em 30 minutos com adaptador de energia de 20W ou superior (vendido separadamente)</p>
+
+                
+
+                <p class="subtitulo">Sensores:</p>
+
+                <p>- Face ID</p>
+
+                <p>- Barômetro</p>
+
+                <p>- Giroscópio de três eixos</p>
+
+                <p>- Acelerômetro</p>
+
+                <p>- Sensor de proximidade</p>
+
+                <p>- Sensor de luz ambiente</p>
+
+                
+
+                <p class="subtitulo">Cartão SIM:</p>
+
+                <p>- Dual SIM (eSIM e nano-SIM) </p>
+
+                <p>- O iPhone 12 mini não é compatível com os cartões micro SIM existentes.</p>
+
+                
+
+                <p class="subtitulo">Conteúdo da Embalagem:</p>
+
+                <p>- iPhone com iOS 14</p>
+
+                <p>- Cabo de USB-C para Lightning</p>
+
+                <p>- Documentação</p>
+
+
+
+                <p>OBS: ESSE PRODUTO NÃO CONTÉM FONES DE OUVIDO E CARREGADOR.</p>
+
+
+                <p class="subtitulo">Garantia</p>
+                <p>1 ano de garantia</p>
+                <p>(9 meses de garantia contratual junto ao fabricante + 3 meses referentes à garantia legal, nos termos do artigo 26, II, do Código de Defesa do Consumidor)v
+
+
+                <p class="subtitulo">Peso</p>
+                <p>275 gramas (bruto com embalagem)</p>
+            </div>
+          </div>
+    </div>
+
+    
+    
+    <div class="footer pt-4">
+
+      <div class="footer-links d-flex col-4 col-lg-4 col-md-4 col-sm-3 justify-content-center">
+
+        <div class="footer-logo col-1 col-md-1 col-sm-1  mt-lg-1 mt-sm-5">
+          <a href="#"><img src="imgs/logo.png" class="logo" alt="logo" title="Logo"></a>
+        </div>
+        
+        <div class="footer-list-links col-7 col-md-8 col-sm-8">
+          <ul>
+            <li><a href="#">Sobre a Lumiery</a></li>
+            <li><a href="#">Contato</a></li>
+            <li><a href="#">Dúvidas</a></li>
+            <li><a href="#">FAQ</a></li>
+            <li><a href="#">SAC</a></li>
+          </ul>
+        </div>
+      </div>
+
+        <div class="footer-pagamentos d-flex col-lg-4 col-md-4 col-sm-4 mt-4">
+          
+          <ul>
+            <li><img src="imgs/pagamentos/band_hiper.png" alt="Hipercard" title="Hipercard"></li>
+            <li><img src="imgs/pagamentos/band_visa.png" alt="Visa" title="Visa"></li>
+          </ul>
+          <ul>
+            <li><img src="imgs/pagamentos/band_diners.png" alt="Diners Club" title="Diners Club"></li>
+            <li><img src="imgs/pagamentos/band_elo.png" alt="Elo" title="Elo"></li>
+          </ul>
+          <ul>
+            <li><img src="imgs/pagamentos/band_american.png" alt="American Express" title="American Express"></li>
+            <li><img src="imgs/pagamentos/band_master.png" alt="Mastercard" title="Mastercard"></li>
+          </ul>
+          <ul>
+            <li><img src="imgs/pagamentos/band_pix.png" alt="PIX" title="PIX"></li>
+          </ul>
+          <ul>
+            <li><img src="imgs/pagamentos/band_boleto.png" alt="Boleto" title="Boleto"></li>
+          </ul>
+
+        </div>
+
+        <div class="footer-info text-light col-md-4 col-lg-4 col-sm-5">
+          <ul>
+            <li>LUMIERY COMÉRCIO ELETRÔNICO S/A</li> 
+            <li class="footer-txt">CNPJ: 02.684.086/0001-44 | São Lourenço do Oeste - SC</li>
+            <li class="footer-txt">Inscrição Estadual: 005.706.165</li>
+            <li class="footer-txt">Endereço: Rua Carlos Gomes, 1321 - 9º Andar</li>
+            <li class="footer-txt">ATENDIMENTO De segunda a sexta das 8:30 às 12H / 13H às 18H</li>
+            <li class="footer-txt">E-mail: faleconosco@lumiery.com.br</li>
+          </ul>
+        </div>
+
+    </div>
+    <script src="js/jquery-3.6.0.js"></script>
+    <script src="js/script.js"></script>
+    <script type="text/javascript" src="js/jquery.maskedinput.js"></script>
+    <script src="js/produto.js"></script>
+    
+    
+</body>
+</html>

@@ -1,0 +1,238 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width">
+    <link rel="stylesheet" href="bootstrap/css/bootstrap.css" />
+    <link rel="stylesheet" href="font-awesome-4.7.0/css/font-awesome.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="css/style.css" />
+    <link rel="stylesheet" href="css/login.css" />
+    <link rel="stylesheet" href="css/media.css" />
+
+
+    <script type="text/javascript" src="bootstrap/js/bootstrap.js"></script>
+    <script type="text/javascript" src="bootstrap/js/bootstrap.bundle.js"></script>
+
+    <script src="js/listaprod.js"></script>
+    <title>Lumiery</title>
+</head>
+<body id="body">
+    <div class="navbar nav-top d-flex justify-content-center">
+
+            <div class="navbar-brand d-flex col-4 align-items-center">
+                <img class="logo" src="./imgs/logo.png" alt="padrao" title="padrao" />
+                <h2 class="marcatopo">Lumiery</h2>
+            </div>
+
+
+            <div class="d-flex col-4 justify-content-end align-items-center">
+              <a href="carrinho.html" class="carrinho nav-link fa fa-shopping-cart text-light links-direita position-relative">
+                <span class="badge rounded-pill badge-danger position-absolute top-40 start-90 translate-middle ">0</span>
+              </a>
+                <div class="signin">
+                  <button class="bt-signin nav-link" id="signin">
+                    <i class="fa fa-sign-in fa-2x" aria-hidden="true"></i>
+                  </button>
+                </div>
+                <a href="#" class="login hide nav-link text-light links-direita" id="login">LOGIN</a>
+                <i class="loged fa fa-user-circle"></i>
+                <a href="#" class="sair">Sair</a>
+                <a href="cadastro.html" class="cadastro hide nav-link text-light links-direita" id="cadastro">CADASTRO</a>
+            </div>
+
+    </div>
+    
+    <div class="navbar navbar-light nav-cat d-flex">
+      <div class="cat-col container-fluid  justify-content-center ">
+        
+      
+        
+        <div class="categoria col-4 col-sm-5 col-xs-2" id="categorias">
+            <div class="dropdown">
+
+                <div class="dropbtn justify-content-center">
+                  <button class="botao-categoria" id="botao-categoria">
+                    <i class="fa fa-chevron-down"><span>Categorias</span></i>
+                  </button>
+                </div>
+                <div class="dropdown-main" id="dropdown-main">
+                  <div id="linksub" class="dropdown-items">
+                    <button class="botao-ferramentas" id="bt-ferramentas">
+                      Ferramentas  
+                      <i class="fa fa-chevron-right"></i>
+                    </button>
+                    
+                    <div class="dropdown-um" id="dropdown-um">
+
+                      <button class="dropdown-item" id="brocas">Brocas</button>
+                      <button class="dropdown-item" id="furadeiras">Furadeiras</button>
+                      <button class="dropdown-item" id="martelos">Martelos</button>
+                      <button class="dropdown-item" id="serras">Serras</button>
+
+                    </div>
+                  </div>
+                   <div id="linksub" class="dropdown-items"> 
+                    <button class="botao-hardware" id="bt-hardware">
+                    Hardware
+                    <i class="fa fa-chevron-right"></i>
+                    </button>
+                    <div class="dropdown-dois" id="dropdown-dois">
+
+                        <button class="dropdown-item" id="fonte">Fonte</button>
+                        <button class="dropdown-item" id="memoria">Memória Ram</button>
+                        <button class="dropdown-item" id="placamae">Placa Mãe</button>
+                        <button class="dropdown-item" id="processador">Processador</button>
+                        <button class="dropdown-item" id="ssd">SSD</button>
+  
+                      </div>
+                  </div>
+                  <div id="linksub" class="dropdown-items">
+                    <button class="botao-moveis" id="bt-moveis">
+                    Móveis
+                    <i class="fa fa-chevron-right"></i>
+                    </button>
+                    <div class="dropdown-tres" id="dropdown-tres">
+
+                        <button class="dropdown-item" id="banheiro">Banheiro</button>
+                        <button class="dropdown-item" id="cozinha">Cozinha</button>
+                        <button class="dropdown-item" id="quarto">Quarto</button>
+                        <button class="dropdown-item" id="sala">Sala</button>
+
+                      </div>
+                  </div>
+                  <div id="linksub" class="dropdown-items">
+                    <button class="botao-tv" id="bt-tvvideo">
+                    TV e Video
+                    <i class="fa fa-chevron-right"></i>
+                    </button>
+                    <div class="dropdown-quatro" id="dropdown-quatro">
+
+                        <button class="dropdown-item" id="tv">TVs</button>
+                        <button class="dropdown-item" id="acessoriotv">Acessórios TVs</button>
+                        <button class="dropdown-item" id="hometheather">Home Theather</button>
+                        <button class="dropdown-item" id="projetor">Projetor</button>
+
+                      </div>
+                  </div>
+                  <div id="linksub" class="dropdown-items">
+                    <button class="botao-smartphones" id="bt-smartphones">
+                    Smartphones
+                    <i class="fa fa-chevron-right"></i>
+                    </button>
+                    <div class="dropdown-cinco" id="dropdown-cinco">
+
+                        <button class="dropdown-item" id="asus">Asus</button>
+                        <button class="dropdown-item" id="lg">LG</button>
+                        <button class="dropdown-item" id="iphone">Iphone</button>
+                        <button class="dropdown-item" id="samsung">Samsung</button>
+  
+                      </div>
+                  </div>
+                </div>
+              </div>
+            
+        </div>
+
+        <div class="buscas text-light col-4 col-sm-7 col-xs-10">
+          <form action="#" method="POST">
+            <div class="d-flex align-items-center">
+              <input type="text" id="busca" name="busca" class="busca flex-fill form-control" placeholder="O que deseja buscar?">
+              <button class="botao-busca btn text-light"><i class="lupa fa fa-search"><label class="lbusca" for="busca">Buscar</label></i></button>
+              
+              
+            </div>
+          </form>
+        </div>
+      </div>
+
+    </div>
+
+    <div class="login-div">
+        
+
+                <form action="" method="POST" class="g-3 login-form">
+                    <h3 class="login-h3 col-xxl-6 offset-xxl-3 col-xl-6 offset-xl-3 col-lg-6 offset-lg-3 col-md-6 offset-md-3 col-sm-12 col-xs-12">Login</h3>
+                    <div class="form-floating mb-3  col-xxl-6 offset-xxl-3 col-xl-6 offset-xl-3 col-lg-6 offset-lg-3 col-md-6 offset-md-3 col-sm-12 col-xs-12">
+                        <input type="email" class="form-control" id="email-login">
+                        <label for="email-login" class="form-label">E-mail</label>
+                        <div class="campo-invalido emaill-invalido">
+                            <p>E-mail inválido.</p>
+                        </div>
+                    </div>
+                    <div class="form-floating mb-3 col-xxl-6 offset-xxl-3 col-xl-6 offset-xl-3 col-lg-6 offset-lg-3 col-md-6 offset-md-3 col-sm-12 col-xs-12">
+                        <input type="password" class="form-control" id="senhal">
+                        <label for="senhal" class="form-label">Senha</label>
+                        <div class="campo-invalido senhal-invalido">
+                            <p>Senha inválida.</p>
+                        </div>
+                    </div>
+                    
+                    <button class="botao-login col-xxl-6 offset-xxl-3 col-xl-6 offset-xl-3 col-lg-6 offset-lg-3 col-md-6 offset-md-3 col-sm-12 col-xs-12">Confirmar</button>
+                </form>
+                
+            
+           
+    </div>
+
+    <div class="footer pt-4">
+
+        <div class="footer-links d-flex col-4 col-lg-4 col-md-4 col-sm-3 justify-content-center">
+
+            <div class="footer-logo col-1 col-md-1 col-sm-1  mt-lg-1 mt-sm-5">
+              <a href="#"><img src="imgs/logo.png" class="logo" alt="logo" title="Logo"></a>
+            </div>
+            
+            <div class="footer-list-links col-7 col-md-8 col-sm-8">
+              <ul>
+                <li><a href="#">Sobre a Lumiery</a></li>
+                <li><a href="#">Contato</a></li>
+                <li><a href="#">Dúvidas</a></li>
+                <li><a href="#">FAQ</a></li>
+                <li><a href="#">SAC</a></li>
+              </ul>
+            </div>
+        </div>
+
+        <div class="footer-pagamentos d-flex col-lg-4 col-md-4 col-sm-4 mt-4">
+          
+          <ul>
+            <li><img src="imgs/pagamentos/band_hiper.png" alt="Hipercard" title="Hipercard"></li>
+            <li><img src="imgs/pagamentos/band_visa.png" alt="Visa" title="Visa"></li>
+          </ul>
+          <ul>
+            <li><img src="imgs/pagamentos/band_diners.png" alt="Diners Club" title="Diners Club"></li>
+            <li><img src="imgs/pagamentos/band_elo.png" alt="Elo" title="Elo"></li>
+          </ul>
+          <ul>
+            <li><img src="imgs/pagamentos/band_american.png" alt="American Express" title="American Express"></li>
+            <li><img src="imgs/pagamentos/band_master.png" alt="Mastercard" title="Mastercard"></li>
+          </ul>
+          <ul>
+            <li><img src="imgs/pagamentos/band_pix.png" alt="PIX" title="PIX"></li>
+          </ul>
+          <ul>
+            <li><img src="imgs/pagamentos/band_boleto.png" alt="Boleto" title="Boleto"></li>
+          </ul>
+
+        </div>
+
+        <div class="footer-info text-light col-md-4 col-lg-4 col-sm-5">
+          <ul>
+            <li>LUMIERY COMÉRCIO ELETRÔNICO S/A</li> 
+            <li class="footer-txt">CNPJ: 02.684.086/0001-44 | São Lourenço do Oeste - SC</li>
+            <li class="footer-txt">Inscrição Estadual: 005.706.165</li>
+            <li class="footer-txt">Endereço: Rua Carlos Gomes, 1321 - 9º Andar</li>
+            <li class="footer-txt">ATENDIMENTO De segunda a sexta das 8:30 às 12H / 13H às 18H</li>
+            <li class="footer-txt">E-mail: faleconosco@lumiery.com.br</li>
+          </ul>
+        </div>
+
+    </div>
+    <script src="js/jquery-3.6.0.js"></script>
+    <script type="text/javascript" src="js/jquery.maskedinput.js"></script>
+    <script src="js/script.js"></script>
+    <script src="js/login.js"></script>
+</body>
+</html>

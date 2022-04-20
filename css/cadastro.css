@@ -1,0 +1,26 @@
+.grid-cadastro{
+    width: 80%;
+    justify-content: center;
+    margin: auto;
+  }
+  
+  #nav-fisica, #nav-juridica{
+    width: 80%;
+    justify-content: center;
+    margin: auto;
+  }
+  
+  .cadastro-fisica, .cadastro-juridica{
+    padding: 20px;
+  }
+  
+  .botao-cadastro{
+    width: 40%;
+    margin-bottom: 20px;
+    margin-left: 50px !important;
+  }
+  
+  .campo-invalido{
+    display: none;
+    color: #ff0505;
+  }

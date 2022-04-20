@@ -1,0 +1,336 @@
+@font-face{
+  font-family: brightons;
+  src: url(../fonts/Brightons-ZVGXl.ttf);
+}
+
+@font-face{
+  font-family: youth-touch;
+  src: url(../fonts/YouthTouchDemoRegular-4VwY.ttf);
+}
+
+@font-face{
+  font-family: nova-medium;
+  src: url(../fonts/HKNovaMedium/TTF/HKNova-Medium.ttf);
+}
+
+.marcatopo{
+  font-family: brightons;
+  font-size: 2rem;
+}
+
+.login, .cadastro{
+  font-family: nova-medium;
+}
+
+.logo{
+    width: 45px;
+    height:45px;
+}
+
+.imgcar{
+    width: 30px !important;
+    height: 30px !important;
+}
+
+.nav-top{
+  background-color: #000500;
+  color: #ffffff;
+}
+
+
+.carrinho{
+  font-size: 32px; 
+}
+
+.links-direita:hover, .bt-signin:hover{
+  color: #DE1759 !important;
+}
+
+.nav-cat{
+  background: linear-gradient(to right,#DE1759 ,#DE1759, #D90429);
+  background-color: #DE1759;
+  margin-bottom: 10px;
+  font-family: nova-medium;
+}
+
+.lupa:hover{
+  color: #000500;
+}
+
+.busca, .lupa{
+  margin-left: 10px;
+  margin-right: 10px;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+
+.lbusca{
+  font-family: nova-medium !important;
+  display: flex;
+  margin-top: 2px;
+  padding:2px;
+}
+
+
+.categoria{
+  max-height: 50px;
+}
+
+.botao-categoria{
+  color: #ffffff;
+  border-color: #DE1759;
+  border-style: solid;
+  background-color: #de1759;
+  font-family: nova-medium;
+}
+
+.botao-categoria span{
+  font-family: nova-medium;
+  font-size: 1.3rem;
+}
+
+.bt-signin{
+  color: rgb(255, 255, 255);
+  border-color: rgb(0, 0, 0);
+  border-style: solid;
+  background-color: rgb(0, 0, 0);
+}
+
+.botao-ferramentas, .botao-hardware, .botao-moveis, .botao-tv, .botao-smartphones{
+  border-color: #f9f9f9;
+  border-style: solid;
+  background-color: #f9f9f9;
+  width: 100%;
+  padding: 13px 17px ;
+}
+
+.botao-ferramentas:hover, .botao-hardware:hover, .botao-moveis:hover, .botao-tv:hover, .botao-smartphones:hover{
+  background-color: #ddd;
+  border-color: #ddd;
+}
+
+.grid img{
+  width: 230px;
+  height: 230px;
+}
+
+.titulo-produto{
+  color: #154cc2;
+
+}
+
+.card{
+  border: none  !important;
+  font-family: nova-medium;
+}
+
+.card-footer{
+  text-align: center;
+
+  transform: rotate(0);
+  background: linear-gradient(#DE1759, #DE1759, #D90429) !important;
+}
+
+.card-footer:hover{
+  background: linear-gradient(#f1072e, #e6346f, #e6346f) !important;
+}
+
+.card-footer a:hover{
+  color: #ffffff;
+}
+
+.link-produto{
+  text-decoration: none;
+  color: #ffffff;
+
+}
+
+.w-80 {
+  width: 80% !important;
+}
+
+.dropdown {
+  float: left;
+  position: relative;
+  bottom: 10px;
+  z-index: 11;
+}
+
+.dropdown .dropbtn {
+  font-size: 1.5rem;    
+  border: none;
+  outline: none;
+  color: white;
+  padding: 13px 17px;
+  max-width: 180px;
+  background-color: inherit;
+  font-family: inherit;
+  margin: 0;
+}
+
+.dropdown-main {
+  cursor: pointer;
+  display: none;
+  position: absolute;
+  background-color: #f9f9f9;
+  min-width: 178px;
+  box-shadow: 0px 8px 16px 0px #000500;
+}
+
+.dropdown-um {
+  cursor: pointer;
+  display: none;
+  position: absolute;
+  left: 178px;
+  top: 0px;
+  min-width: 160px;
+  background-color: #f9f9f9;
+  box-shadow: 0px 8px 16px 0px #000500;
+}
+
+.dropdown-dois {
+  cursor: pointer;
+  display: none;
+  position: absolute;
+  left: 178px;
+  top: 54px;
+  min-width: 160px;
+  background-color: #f9f9f9;
+  box-shadow: 0px 8px 16px 0px #000500;
+}
+
+.dropdown-tres {
+  cursor: pointer;
+  display: none;
+  position: absolute;
+  left: 178px;
+  top: 107px;
+  min-width: 160px;
+  background-color: #f9f9f9;
+  box-shadow: 0px 8px 16px 0px #000500;
+}
+
+.dropdown-quatro {
+  cursor: pointer;
+  display: none;
+  position: absolute;
+  left: 178px;
+  top: 161px;
+  min-width: 160px;
+  background-color: #f9f9f9;
+  box-shadow: 0px 8px 16px 0px #000500;
+}
+
+.dropdown-cinco {
+  cursor: pointer;
+  display: none;
+  position: absolute;
+  left: 178px;
+  top: 215px;
+  min-width: 160px;
+  background-color: #f9f9f9;
+  box-shadow: 0px 8px 16px 0px #000500;
+}
+
+
+.dropdown-main .dropdown-item {
+  color: #000500;
+  padding: 12px 16px;
+  display: block;
+  text-align: left;
+}
+
+.dropdown-main .dropdown-item:hover, .dropdown-um a:hover, .dropdown-dois a:hover,
+.dropdown-tres a:hover, .dropdown-quatro a:hover, .dropdown-cinco a:hover {
+  background-color: #ddd;
+}
+
+.footer{
+  display: flex;
+  background-color: #000500;
+  font-family: nova-medium;
+  font-size: 1rem;
+}
+
+.footer a{
+  text-decoration: none;
+}
+
+.footer ul{
+  list-style: none;
+}
+
+.footer-links a{
+  color: #ffffff;
+}
+
+.footer-list-links a:hover{
+  color: #DE1759;
+}
+
+.footer-pagamentos{
+  display: flex;
+}
+
+.footer-info{
+  display: flex;
+}
+
+.footer-txt{
+  font-size: 0.8rem;
+}
+
+.comprar, .parcelas, .frete, .botao-cadastro, .botao-login{
+  width: 50%;
+  border: solid;
+  border-radius: 5px;
+  color: #ffffff;
+
+  padding: 5px;
+  background: linear-gradient(#DE1759, #DE1759, #D90429) !important;
+}
+
+
+
+
+  
+.comprar:hover, .parcelas:hover, .frete:hover, .botao-cadastro:hover, .botao-login:hover{
+  color: #ffffff;
+  background: linear-gradient(#f1072e, #e6346f, #e6346f) !important;
+}
+
+.loged{
+  display: none;
+  font-size: 26px; 
+  margin-top: 2px;
+  padding:2px;
+}
+
+.loged:hover{
+  color: #DE1759;
+}
+
+.sair{
+  display: none;
+  font-family: nova-medium;
+  align-self: center;
+  color: #ffffff;
+  padding: 2px;
+  margin-top: 3px;
+  text-decoration: none;
+}
+
+.sair:hover{
+  color: #DE1759;
+}
+
+.esconder{
+  display: none;
+}
+
+.badge{
+  background-color: #DE1759;
+  font-size: 1rem;
+  padding: 0.15em 0.35em;
+}

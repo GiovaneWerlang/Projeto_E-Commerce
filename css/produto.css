@@ -1,0 +1,111 @@
+#descricao{
+    text-align: justify;
+    text-justify: inter-word;
+  }
+
+  .modal-title{
+    font-weight: bold;
+  }
+  
+  .tabela-parcelas{
+    color: #de1759;
+  }
+  
+  #calcular{
+    color: #ffffff;
+    background-color: #000500;
+    border-color: #000500;
+    border-radius: 5px;
+    width: 40%;
+  }
+  
+  #calcular:hover{
+    background-color: #1f1f1f;
+    border-color: #1f1f1f;
+  }
+  
+  .especificacoes{
+    width: 70%;
+    margin: auto;
+  }
+  
+  .subtitulo{
+    font-size: 1.2rem;
+    color: #000500;
+    font-weight: bold;
+  }
+  
+  #especificacoes, #descricao{
+    font-family: nova-medium;
+    margin: 50px;
+  }
+  
+  #descricao-tab, #especificacoes-tab{
+    font-family: nova-medium;
+  }
+
+  .janela-produto{
+    width: 70%;
+    display: flex;
+    flex-direction: row;
+    margin: auto;
+  
+    padding-top: 100px;
+    padding-bottom: 100px;
+  
+  }
+  
+  .imagens-produto{
+    width: 40%;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+  }
+  
+  .expandida{
+    max-width: 430px;
+    min-height: 500px;
+  }
+  
+  
+  .miniaturas{
+    display: flex;
+  }
+  
+  .miniatura1, .miniatura2, .miniatura3, .miniatura4{
+    margin-left: 5px;
+    width: 100px;
+    height: 100px;
+    max-width: 100px;
+    max-height: 100px;
+  }
+  
+  .descricao-produto{
+    margin-top: 50px;
+    margin-bottom: 50px;
+  }
+  
+  .detalhes-produto{
+    width: 60%;
+    padding: 50px;
+    font-family: nova-medium;
+  }
+  
+  .comprar{
+    margin-bottom: 20px;
+  }
+  
+  .valor-produto{
+    font-size: 2rem;
+    margin-bottom: 10px;
+  }
+  
+  .parcelas{
+    margin-bottom: 20px;
+    margin-top: 20px;
+  }
+
+  .campo-invalido{
+    display: none;
+    color: #ff0505;
+  }
